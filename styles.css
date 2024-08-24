@@ -1,0 +1,146 @@
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Baloo 2", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    background-color: #f6f6f6;
+    color: #333;
+    display: flex;
+    min-height: 100vh;         
+    flex-direction: column;
+}
+
+header {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+header input, header button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    margin: 5px;
+}
+
+header input {
+    width: calc(100% - 130px);
+    max-width: 400px;
+    border: 1px solid #ddd;
+}
+
+header button {
+    background-color: #fff;
+    color: #ff4500;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+header button:hover {
+    background-color: #f2f2f2;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#news-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* keep chillin keep Flippin, Ye Aram ka mamla hai */
+.article {    
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.article:hover {
+    background-color: #f7f7f7;
+}
+
+.article a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.article p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    /* font-family: "Creepster", system-ui; */
+    /* font-weight: 100; */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    font-family: "Baloo 2", sans-serif;
+    color: #333;
+    font-weight: 700;
+    padding: 10px;
+    display: block;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #f0f0f0;
+}
