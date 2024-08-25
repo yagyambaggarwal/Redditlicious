@@ -19,16 +19,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function fetchNews() {
     fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => displayNews(data.articles))
+        .then(response => {
+            console.log('Fetch News Response:', response);
+            return response.json();
+        })
+        .then(data => {
+            console.log('Fetch News Data:', data);
+            displayNews(data.articles);
+        })
         .catch(error => console.error('Error fetching news:', error));
 }
 
 function searchNews(query) {
     const searchUrl = `https://newsapi.org/v2/everything?q=${query}&apiKey=${apiKey}`;
     fetch(searchUrl)
-        .then(response => response.json())
-        .then(data => displayNews(data.articles))
+        .then(response => {
+            console.log('Search News Response:', response);
+            return response.json();
+        })
+        .then(data => {
+            console.log('Search News Data:', data);
+            displayNews(data.articles);
+        })
         .catch(error => console.error('Error searching news:', error));
 }
 
